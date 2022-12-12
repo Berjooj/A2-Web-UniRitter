@@ -22,10 +22,12 @@
                 </div>
 
                 <hr class="my-4">
-                {{-- <div class="alert alert-{{ $typeAlert ?? 'success' }} alert-dismissible fade show" role="alert">
-                    <strong>Atenção!</strong> {{ $message ?? '' }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div> --}}
+                <div class="error" style="display: none">
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>Atenção!</strong> <span class="error-message"></span>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
 
                 <div class="row">
                     <div class="col-6">

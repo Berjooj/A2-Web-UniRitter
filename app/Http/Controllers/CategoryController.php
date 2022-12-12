@@ -52,7 +52,7 @@ class CategoryController extends Controller
             return redirect('categories')->with('message', 'Categoria cadastrada com sucesso!');
         } catch (Throwable $ex) {
             DB::rollBack();
-            return redirect('categories/create')->with('message', 'Erro ao cadastrar a categoria, verifique os dados preenchidos e tente novamente.');
+            return redirect('categories/create?error=Erro ao cadastrar a categoria, verifique os dados preenchidos e tente novamente.');
         }
     }
 
@@ -104,7 +104,7 @@ class CategoryController extends Controller
             return redirect('categories')->with('message', 'Categoria atualizada com sucesso!');
         } catch (Throwable $ex) {
             DB::rollBack();
-            return redirect('categories/{$id}/edit')->with('message', 'Erro ao atualizar a categoria, verifique os dados preenchidos e tente novamente.');
+            return redirect("categories/{$id}/edit?error=Erro ao atualizar a categoria, verifique os dados preenchidos e tente novamente.");
         }
     }
 

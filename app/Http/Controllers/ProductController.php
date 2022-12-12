@@ -60,7 +60,7 @@ class ProductController extends Controller
             return redirect('products')->with('message', 'Produto cadastrado com sucesso!');
         } catch (Throwable $ex) {
             DB::rollBack();
-            return redirect('products/create')->with('message', 'Erro ao cadastrar o produto, verifique os dados preenchidos e tente novamente.');
+            return redirect('products/create?error=Erro ao cadastrar o produto, verifique os dados preenchidos e tente novamente.');
         }
     }
 
@@ -115,7 +115,7 @@ class ProductController extends Controller
             return redirect('products')->with('message', 'Produto atualizado com sucesso!');
         } catch (Throwable $ex) {
             DB::rollBack();
-            return redirect('products/{$id}/edit')->with('message', 'Erro ao atualizar o produto, verifique os dados preenchidos e tente novamente.');
+            return redirect("products/{$id}/edit?error=Erro ao atualizar o produto, verifique os dados preenchidos e tente novamente.");
         }
     }
 
