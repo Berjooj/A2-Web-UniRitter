@@ -40,7 +40,7 @@
                                             accept-charset="UTF-8" style="display:inline">
                                             {{ csrf_field() }}
                                             <button type="submit" class="btn btn-outline-danger btn-sm"
-                                                title="Deletar produto">Delete</button>
+                                                title="Deletar produto">Deletar</button>
                                         </form>
                                     </td>
                                 </tr>
