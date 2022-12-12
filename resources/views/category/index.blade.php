@@ -3,6 +3,7 @@
     <section class="py-4">
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 row-cols-12 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <h4>Categorias</h4>
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
